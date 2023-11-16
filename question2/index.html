@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6306980a58.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Formulaire | Pizza</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <h3>PizzaHot</h3>
+      </div>
+      <nav>
+        <ul id="nav-elements">
+          <li>Home</li>
+          <li>Reservations</li>
+          <li>Menu</li>
+          <li>Blog</li>
+          <li>Pages</li>
+          <li>Shop</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div id="nav-rs">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </header>
+    <form action="">
+      <fieldset id="pizza">
+        <legend>Pizza</legend>
+        <p>3 euros la pizza</p>
+        <div class="container-image">
+          <input type="radio" name="choixPizza" id="pizzaChorizo" />
+          <label for="pizzaChorizo" class="image">
+            <img src="./image/plat1.jpg" alt="3€" />
+          </label>
+          <input type="radio" name="choixPizza" id="pizzaChevre" />
+          <label for="pizzaChevre" class="image">
+            <img src="./image/plat2.jpg" alt="3€" />
+          </label>
+          <input type="radio" name="choixPizza" id="pizzaFromage" />
+          <label for="pizzaFromage" class="image">
+            <img src="./image/plat3.jpg" alt="3€" />
+          </label>
+        </div>
+        <input
+          type="number"
+          name=""
+          min="0"
+          id="quantitePizza"
+          placeholder="Combien de pizza ?"
+        />
+        <div id="container-pasPizza">
+          <input type="radio" name="choixPizza" id="pasPizza" />
+          <label for="pasPizza">Pas de pizza</label>
+        </div>
+        <div id="container-choixHuile">
+          <input type="checkbox" name="" id="choixHuile" />
+          <label for="choixHuile">Je souhaite un supplément huile</label>
+        </div>
+      </fieldset>
+
+      <fieldset id="boisson">
+        <legend>Boisson</legend>
+        <p>2 euros la boisson</p>
+        <div class="container-image">
+          <input type="radio" name="choixBoisson" id="boissonYanga" />
+          <label for="boissonYanga" class="image">
+            <img src="./image/plat1.jpg" alt="2€" />
+          </label>
+          <input type="radio" name="choixBoisson" id="boissonDuff" />
+          <label for="boissonDuff" class="image"
+            ><img src="./image/plat2.jpg" alt="2€"
+          /></label>
+          <input type="radio" name="choixBoisson" id="boissonEau" />
+          <label for="boissonEau" class="image"
+            ><img src="./image/plat3.jpg" alt="2€"
+          /></label>
+          <input type="radio" name="choixBoisson" id="boissonCafe" />
+          <label for="boissonCafe" class="image"
+            ><img src="./image/plat4.jpg" alt="2€"
+          /></label>
+        </div>
+        <input
+          type="number"
+          min="0"
+          name="Quantité boisson"
+          id="quantiteBoisson"
+          placeholder="Combien de cannette ?"
+        />
+        <div id="container-pasBoisson">
+          <input type="radio" name="choixBoisson" id="pasBoisson" />
+          <label for="pasPizza">Pas de boisson</label>
+        </div>
+      </fieldset>
+
+      <fieldset id="commentaire">
+        <textarea
+          name=""
+          id=""
+          placeholder="Completez votre commande ici (facultatif)"
+        ></textarea>
+      </fieldset>
+
+      <fieldset id="coordonnees">
+        <legend>Vos coordonnées</legend>
+        <div id="container-coordonnees">
+          <input type="text" name="" id="" placeholder="nom" />
+          <input type="number" name="" id="" placeholder="Téléphone" />
+          <input type="text" name="" id="" placeholder="Adresse" />
+          <input type="email" name="" id="" placeholder="email" />
+        </div>
+      </fieldset>
+      <div id="input">
+        <span><input type="submit" value="Envoyer la commande" /></span>
+      </div>
+      <!-- </div> -->
+      <!-- <div id="boisson"> -->
+
+      <!-- </div> -->
+      <!-- <div id="commentaire"> -->
+
+      <!-- </div> -->
+      <!-- <div id="coordonnees"> -->
+
+      <!-- </div> -->
+    </form>
+  </body>
+</html>

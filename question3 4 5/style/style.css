@@ -1,0 +1,257 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* HEADER  */
+
+body {
+    background: url("../image/backgroundSite.jpg") fixed center/cover;
+}
+
+header {
+    padding: 15px 0;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 12% 80% 8%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header #logo {
+    font-family: Allura;
+    font-size: 2rem;
+    color: #fff;
+}
+
+header nav #nav-elements {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 0 15px;
+}
+
+header nav #nav-elements li {
+    cursor: pointer;
+}
+
+header #nav-rs {
+    display: flex;
+    justify-content: space-around;
+}
+
+header #nav-rs a {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+/* FORMULAIRE GENERAL */
+form {
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.495);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+fieldset {
+    border-radius: 25px;
+    margin: 35px 0;
+    border: 1px solid #EEEEEE;
+}
+
+legend {
+    text-align: center;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #EEEEEE;
+}
+
+p {
+    text-align: center;
+    font-family: poppins;
+    color: #EEEEEE;
+}
+
+.container-image {
+    display: flex;
+    width: 50%;
+    margin: 30px auto;
+    justify-content: space-around;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+label,
+input {
+    font-family: poppins;
+    color: #EEEEEE;
+}
+
+label {
+    cursor: pointer;
+}
+
+label.image {
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+/* PIZZA ET BOISSON*/
+#pizza input[type="number"],
+#boisson input[type="number"] {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #EEEEEE;
+    outline: none;
+    padding: 0 5px 5px 0;
+    background: none;
+}
+
+#pizza input[type="number"]::placeholder,
+#boisson input[type="number"]::placeholder {
+    color: #EEEEEE;
+}
+
+#container-pasPizza,
+#container-choixHuile,
+#container-pasBoisson {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#container-pasPizza label,
+#container-pasBoisson label {
+    border: 1px solid #EEEEEE;
+    padding: 5px 30px;
+}
+
+/* COMMENTAIRE */
+#commentaire {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#commentaire textarea {
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+    outline: none;
+    font-family: poppins;
+    width: 50%;
+    height: 150px;
+    background: none;
+    color: #EEEEEE;
+}
+
+#commentaire textarea::placeholder {
+    color: #EEEEEE;
+}
+
+/* COORDONNEES */
+#coordonnees {
+    display: flex;
+    justify-content: center;
+}
+
+#container-coordonnees {
+    margin: 15px 0;
+}
+
+#coordonnees input[type="email"] {
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #EEEEEE;
+    background: none;
+    outline: none;
+    padding: 0 5px 5px 0;
+    margin: 0 5px;
+}
+
+#coordonnees input[type="email"]::placeholder {
+    color: #EEEEEE;
+}
+
+/* SUBMIT */
+#input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+span {
+    position: relative;
+}
+
+input[type="submit"] {
+    background-color: none;
+    position: relative;
+    border: 1px solid #a67245;
+    outline: none;
+    padding: 10px 30px;
+    background: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+span::before {
+    content: "";
+    position: absolute;
+    transform: scale(1);
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+    background-color: #a67245;
+    transition: 0.6s;
+}
+
+span:hover::before {
+    transform: scale(0);
+    transition: 0.6s;
+}
+
+/* CHAMPS OBLIGATOIRES */
+input:required {
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #ce1327;
+    background: none;
+    outline: none;
+    padding: 0 5px 5px 0;
+    margin: 0 5px;
+}
+
+input:required::placeholder {
+    color: #EEEEEE;
+}

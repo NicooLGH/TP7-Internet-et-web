@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire | Pizza</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <p>3 euros la pizza</p>
+        <input type="radio" name="choixPizza" id="pizzaChorizo" />
+        <label for="pizzaChorizo">
+          <img src="./image/plat1.jpg" alt="" />
+        </label>
+        <input type="radio" name="choixPizza" id="pizzaChevre" />
+        <label for="pizzaChevre">
+          <img src="./image/plat2.jpg" alt="" />
+        </label>
+        <input type="radio" name="choixPizza" id="pizzaFromage" />
+        <label for="pizzaFromage">
+          <img src="./image/plat3.jpg" alt="" />
+        </label>
+        <input
+          type="number"
+          name="Quantité de pizza"
+          id="quantitePizza"
+          placeholder="Combien de pizza ?"
+        />
+        <input
+          type="radio"
+          name="choixPizza"
+          id="pasPizza"
+          value="Pas de pizza"
+        />
+        <label for="pasPizza">Pas de pizza</label>
+        <input type="checkbox" name="Supplément huile" id="choixHuile" />
+        <label for="choixHuile">Souhaitez-vous un supplément huile ?</label>
+      </fieldset>
+
+      <fieldset>
+        <p>2 euros la boisson</p>
+        <input
+          type="radio"
+          name="choixBoisson"
+          id="boissonYanga"
+          value="Yanga"
+        />
+        <label for="boissonYanga">
+          <img src="./image/plat1.jpg" />
+        </label>
+        <input type="radio" name="choixBoisson" id="boissonDuff" value="Duff" />
+        <label for="boissonDuff"><img src="./image/plat2.jpg" /></label>
+        <input type="radio" name="choixBoisson" id="boissonEau" value="Eau" />
+        <label for="boissonEau"><img src="./image/plat3.jpg" /></label>
+        <input type="radio" name="choixBoisson" id="boissonCafe" value="Café" />
+        <label for="boissonCafe"><img src="./image/plat4.jpg" /></label>
+        <input
+          type="number"
+          name="Quantité de boisson"
+          id="quantiteBoisson"
+          placeholder="Combien de cannette ?"
+        />
+        <input type="radio" name="choixBoisson" id="pasBoisson" />
+        <label for="pasPizza">Pas de boisson</label>
+      </fieldset>
+
+      <fieldset>
+        <textarea
+          name="Commentaire"
+          placeholder="Completez votre commande ici"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <input type="text" name="Nom" placeholder="nom" />
+        <input type="number" name="Telephone" placeholder="Téléphone" />
+        <input type="text" name="Adresse" placeholder="Adresse" />
+        <input type="email" name="Email" placeholder="email" />
+      </fieldset>
+
+      <input type="submit" value="Envoyer la commande" />
+      <!-- </div> -->
+      <!-- <div id="boisson"> -->
+
+      <!-- </div> -->
+      <!-- <div id="commentaire"> -->
+
+      <!-- </div> -->
+      <!-- <div id="coordonnees"> -->
+
+      <!-- </div> -->
+    </form>
+  </body>
+</html>

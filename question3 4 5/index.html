@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6306980a58.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Formulaire | Pizza</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <h3>PizzaHot</h3>
+      </div>
+      <nav>
+        <ul id="nav-elements">
+          <li>Home</li>
+          <li>Reservations</li>
+          <li>Menu</li>
+          <li>Blog</li>
+          <li>Pages</li>
+          <li>Shop</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div id="nav-rs">
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </header>
+    <form action="">
+      <fieldset id="pizza">
+        <legend>Pizza</legend>
+        <p>3 euros la pizza</p>
+        <div class="container-image">
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pizzaChorizo"
+            value="Pizza Chorizo"
+            class="choixPizza"
+          />
+          <label for="pizzaChorizo" class="image">
+            <img src="./image/plat1.jpg" />
+          </label>
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pizzaChevre"
+            value="Pizza Chevre"
+            class="choixPizza"
+          />
+          <label for="pizzaChevre" class="image">
+            <img src="./image/plat2.jpg" />
+          </label>
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pizzaFromage"
+            value="Pizza Fromage"
+            class="choixPizza"
+          />
+          <label for="pizzaFromage" class="image">
+            <img src="./image/plat3.jpg" />
+          </label>
+        </div>
+        <input
+          type="number"
+          name="Quantité pizza"
+          id="quantitePizza"
+          placeholder="Combien de pizza ?"
+          min="0"
+          value="0"
+          disabled
+        />
+        <div id="container-pasPizza">
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pasPizza"
+            value="Pas de Pizza"
+            checked
+          />
+          <label for="pasPizza">Pas de pizza</label>
+        </div>
+        <div id="container-choixHuile">
+          <input
+            type="checkbox"
+            name="Supplément huile"
+            id="choixHuile"
+            value="Oui"
+            disabled
+          />
+          <label for="choixHuile">Je souhaite un supplément huile</label>
+        </div>
+      </fieldset>
+
+      <fieldset id="boisson">
+        <legend>Boisson</legend>
+        <p>2 euros la boisson</p>
+        <div class="container-image">
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonYanga"
+            value="Boisson Yanga"
+            class="choixBoisson"
+          />
+          <label for="boissonYanga" class="image">
+            <img src="./image/plat1.jpg" alt="2€" />
+          </label>
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonDuff"
+            value="Boisson Duff"
+            class="choixBoisson"
+          />
+          <label for="boissonDuff" class="image"
+            ><img src="./image/plat2.jpg" alt="2€"
+          /></label>
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonEau"
+            value="Boisson Eau"
+            class="choixBoisson"
+          />
+          <label for="boissonEau" class="image"
+            ><img src="./image/plat3.jpg" alt="2€"
+          /></label>
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonCafe"
+            value="Boisson Café"
+            class="choixBoisson"
+          />
+          <label for="boissonCafe" class="image"
+            ><img src="./image/plat4.jpg" alt="2€"
+          /></label>
+        </div>
+        <input
+          type="number"
+          name="Quantité boisson"
+          id="quantiteBoisson"
+          placeholder="Combien de cannette ?"
+          min="0"
+          value="0"
+          disabled
+        />
+        <div id="container-pasBoisson">
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="pasBoisson"
+            value="Pas de boisson"
+            checked
+          />
+          <label for="pasBoisson">Pas de boisson</label>
+        </div>
+      </fieldset>
+
+      <fieldset id="commentaire">
+        <textarea
+          name="commentaire"
+          id=""
+          placeholder="Completez votre commande ici (facultatif)"
+        ></textarea>
+      </fieldset>
+
+      <fieldset id="coordonnees">
+        <legend>Vos coordonnées</legend>
+        <div id="container-coordonnees">
+          <input type="text" name="nom" id="" placeholder="nom" required />
+          <input
+            type="number"
+            name="telephone"
+            id=""
+            placeholder="Téléphone"
+            required
+          />
+          <input
+            type="text"
+            name="adresse"
+            id=""
+            placeholder="Adresse"
+            required
+          />
+          <input type="email" name="email" id="" placeholder="email" />
+        </div>
+      </fieldset>
+      <div id="input">
+        <span
+          ><input id="submit" type="submit" value="Envoyer la commande"
+        /></span>
+      </div>
+
+      <div id="containerPrix">
+        <p id="prix">Prix total :</p>
+      </div>
+    </form>
+  </body>
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+</html>
