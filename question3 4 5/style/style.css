@@ -40,6 +40,11 @@ header nav #nav-elements {
     padding: 0 15px;
 }
 
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
 header nav #nav-elements li {
     cursor: pointer;
 }
@@ -50,7 +55,6 @@ header #nav-rs {
 }
 
 header #nav-rs a {
-    color: #fff;
     font-size: 0.7rem;
 }
 

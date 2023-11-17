@@ -19,9 +19,9 @@
       <nav>
         <ul id="nav-elements">
           <li>Home</li>
-          <li>Reservations</li>
-          <li>Menu</li>
-          <li>Blog</li>
+          <li><a href="#pizza">Pizza</a></li>
+          <li><a href="#boisson">Boisson</a></li>
+          <li><a href="#coordonnees">Coordonnées</a></li>
           <li>Pages</li>
           <li>Shop</li>
           <li>Contact</li>
@@ -108,7 +108,7 @@
             type="radio"
             name="choixBoisson"
             id="boissonYanga"
-            value="Boisson Yanga"
+            value="Yanga"
             class="choixBoisson"
           />
           <label for="boissonYanga" class="image">
@@ -118,7 +118,7 @@
             type="radio"
             name="choixBoisson"
             id="boissonDuff"
-            value="Boisson Duff"
+            value="Duff"
             class="choixBoisson"
           />
           <label for="boissonDuff" class="image"
@@ -128,7 +128,7 @@
             type="radio"
             name="choixBoisson"
             id="boissonEau"
-            value="Boisson Eau"
+            value="Eau"
             class="choixBoisson"
           />
           <label for="boissonEau" class="image"
@@ -138,7 +138,7 @@
             type="radio"
             name="choixBoisson"
             id="boissonCafe"
-            value="Boisson Café"
+            value="Café"
             class="choixBoisson"
           />
           <label for="boissonCafe" class="image"
@@ -179,19 +179,13 @@
         <div id="container-coordonnees">
           <input type="text" name="nom" id="" placeholder="nom" required />
           <input
-            type="number"
+            type="tel"
             name="telephone"
-            id=""
             placeholder="Téléphone"
             required
+            pattern="^[0-9\s+]+$"
           />
-          <input
-            type="text"
-            name="adresse"
-            id=""
-            placeholder="Adresse"
-            required
-          />
+          <input type="text" name="adresse" placeholder="Adresse" required />
           <input type="email" name="email" id="" placeholder="email" />
         </div>
       </fieldset>

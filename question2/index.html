@@ -18,9 +18,9 @@
       <nav>
         <ul id="nav-elements">
           <li>Home</li>
-          <li>Reservations</li>
-          <li>Menu</li>
-          <li>Blog</li>
+          <li><a href="#pizza">pizza</a></li>
+          <li><a href="#boisson">boisson</a></li>
+          <li><a href="#coordonnees">coordonnees</a></li>
           <li>Pages</li>
           <li>Shop</li>
           <li>Contact</li>
@@ -37,32 +37,56 @@
         <legend>Pizza</legend>
         <p>3 euros la pizza</p>
         <div class="container-image">
-          <input type="radio" name="choixPizza" id="pizzaChorizo" />
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pizzaChorizo"
+            value="Chorizo"
+          />
           <label for="pizzaChorizo" class="image">
             <img src="./image/plat1.jpg" alt="3€" />
           </label>
-          <input type="radio" name="choixPizza" id="pizzaChevre" />
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pizzaChevre"
+            value="Chevre"
+          />
           <label for="pizzaChevre" class="image">
             <img src="./image/plat2.jpg" alt="3€" />
           </label>
-          <input type="radio" name="choixPizza" id="pizzaFromage" />
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pizzaFromage"
+            value="Fromage"
+          />
           <label for="pizzaFromage" class="image">
             <img src="./image/plat3.jpg" alt="3€" />
           </label>
         </div>
         <input
           type="number"
-          name=""
+          name="Quantité pizza"
           min="0"
           id="quantitePizza"
           placeholder="Combien de pizza ?"
         />
         <div id="container-pasPizza">
-          <input type="radio" name="choixPizza" id="pasPizza" />
+          <input
+            type="radio"
+            name="choixPizza"
+            id="pasPizza"
+            value="Pas de Pizza"
+          />
           <label for="pasPizza">Pas de pizza</label>
         </div>
         <div id="container-choixHuile">
-          <input type="checkbox" name="" id="choixHuile" />
+          <input
+            type="checkbox"
+            name="Je souhaite de l'huile"
+            id="choixHuile"
+          />
           <label for="choixHuile">Je souhaite un supplément huile</label>
         </div>
       </fieldset>
@@ -71,19 +95,34 @@
         <legend>Boisson</legend>
         <p>2 euros la boisson</p>
         <div class="container-image">
-          <input type="radio" name="choixBoisson" id="boissonYanga" />
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonYanga"
+            value="Yanga"
+          />
           <label for="boissonYanga" class="image">
             <img src="./image/plat1.jpg" alt="2€" />
           </label>
-          <input type="radio" name="choixBoisson" id="boissonDuff" />
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonDuff"
+            value="Duff"
+          />
           <label for="boissonDuff" class="image"
             ><img src="./image/plat2.jpg" alt="2€"
           /></label>
-          <input type="radio" name="choixBoisson" id="boissonEau" />
+          <input type="radio" name="choixBoisson" id="boissonEau" value="Eau" />
           <label for="boissonEau" class="image"
             ><img src="./image/plat3.jpg" alt="2€"
           /></label>
-          <input type="radio" name="choixBoisson" id="boissonCafe" />
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="boissonCafe"
+            value="café"
+          />
           <label for="boissonCafe" class="image"
             ><img src="./image/plat4.jpg" alt="2€"
           /></label>
@@ -96,15 +135,19 @@
           placeholder="Combien de cannette ?"
         />
         <div id="container-pasBoisson">
-          <input type="radio" name="choixBoisson" id="pasBoisson" />
+          <input
+            type="radio"
+            name="choixBoisson"
+            id="pasBoisson"
+            value="pas de boisson"
+          />
           <label for="pasPizza">Pas de boisson</label>
         </div>
       </fieldset>
 
       <fieldset id="commentaire">
         <textarea
-          name=""
-          id=""
+          name="commentaire"
           placeholder="Completez votre commande ici (facultatif)"
         ></textarea>
       </fieldset>
@@ -112,25 +155,15 @@
       <fieldset id="coordonnees">
         <legend>Vos coordonnées</legend>
         <div id="container-coordonnees">
-          <input type="text" name="" id="" placeholder="nom" />
-          <input type="number" name="" id="" placeholder="Téléphone" />
-          <input type="text" name="" id="" placeholder="Adresse" />
-          <input type="email" name="" id="" placeholder="email" />
+          <input type="text" name="nom" placeholder="nom" />
+          <input type="tel" name="Numéro" placeholder="Téléphone" />
+          <input type="text" name="Adresse" placeholder="Adresse" />
+          <input type="email" name="Email" placeholder="email" />
         </div>
       </fieldset>
       <div id="input">
         <span><input type="submit" value="Envoyer la commande" /></span>
       </div>
-      <!-- </div> -->
-      <!-- <div id="boisson"> -->
-
-      <!-- </div> -->
-      <!-- <div id="commentaire"> -->
-
-      <!-- </div> -->
-      <!-- <div id="coordonnees"> -->
-
-      <!-- </div> -->
     </form>
   </body>
 </html>

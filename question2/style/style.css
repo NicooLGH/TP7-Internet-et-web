@@ -11,7 +11,7 @@
 /* HEADER  */
 
 body {
-    background: url("/question2/image/backgroundSite.jpg") fixed center/cover;
+    background: url("../image/backgroundSite.jpg") fixed center/cover;
 }
 
 header {
@@ -49,8 +49,12 @@ header #nav-rs {
     justify-content: space-around;
 }
 
-header #nav-rs a {
+header a {
     color: #fff;
+    text-decoration: none;
+}
+
+header #nav-rs a {
     font-size: 0.7rem;
 }
 

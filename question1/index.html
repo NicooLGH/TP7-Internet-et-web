@@ -9,17 +9,27 @@
     <form action="">
       <fieldset>
         <p>3 euros la pizza</p>
-        <input type="radio" name="choixPizza" id="pizzaChorizo" />
+        <input
+          type="radio"
+          name="choixPizza"
+          id="pizzaChorizo"
+          value="chorizo"
+        />
         <label for="pizzaChorizo">
-          <img src="./image/plat1.jpg" alt="" />
+          <img src="./image/plat1.jpg" />
         </label>
-        <input type="radio" name="choixPizza" id="pizzaChevre" />
+        <input type="radio" name="choixPizza" id="pizzaChevre" value="chevre" />
         <label for="pizzaChevre">
-          <img src="./image/plat2.jpg" alt="" />
+          <img src="./image/plat2.jpg" />
         </label>
-        <input type="radio" name="choixPizza" id="pizzaFromage" />
+        <input
+          type="radio"
+          name="choixPizza"
+          id="pizzaFromage"
+          value="fromage"
+        />
         <label for="pizzaFromage">
-          <img src="./image/plat3.jpg" alt="" />
+          <img src="./image/plat3.jpg" />
         </label>
         <input
           type="number"
@@ -31,7 +41,7 @@
           type="radio"
           name="choixPizza"
           id="pasPizza"
-          value="Pas de pizza"
+          value="pas de pizza"
         />
         <label for="pasPizza">Pas de pizza</label>
         <input type="checkbox" name="Supplément huile" id="choixHuile" />
@@ -61,7 +71,12 @@
           id="quantiteBoisson"
           placeholder="Combien de cannette ?"
         />
-        <input type="radio" name="choixBoisson" id="pasBoisson" />
+        <input
+          type="radio"
+          name="choixBoisson"
+          id="pasBoisson"
+          value="pas de boisson"
+        />
         <label for="pasPizza">Pas de boisson</label>
       </fieldset>
 
@@ -74,22 +89,12 @@
 
       <fieldset>
         <input type="text" name="Nom" placeholder="nom" />
-        <input type="number" name="Telephone" placeholder="Téléphone" />
+        <input type="tel" name="Telephone" placeholder="Téléphone" />
         <input type="text" name="Adresse" placeholder="Adresse" />
         <input type="email" name="Email" placeholder="email" />
       </fieldset>
 
       <input type="submit" value="Envoyer la commande" />
-      <!-- </div> -->
-      <!-- <div id="boisson"> -->
-
-      <!-- </div> -->
-      <!-- <div id="commentaire"> -->
-
-      <!-- </div> -->
-      <!-- <div id="coordonnees"> -->
-
-      <!-- </div> -->
     </form>
   </body>
 </html>
